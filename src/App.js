@@ -5,7 +5,8 @@ function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=f490e0aced160f002761c83a3c22c950`;
+ //nedostaje https:// na pocetku url a  zbog git-a 
+ const url = `api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=f490e0aced160f002761c83a3c22c950`;
 
   // pritiskom na enter ova funkcija u setData prosledjuje odgovor tj lokaciju na osnovu url-a
   const searchLocation = (event) => {
